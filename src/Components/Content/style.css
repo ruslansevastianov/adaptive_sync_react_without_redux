@@ -1,0 +1,26 @@
+.blockContent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1339px){
+
+    .blockContent{
+        width: 95%;
+    }
+}
+
+/* с этого момента идет изменение макета */
+@media screen and (min-width: 0px) and (max-width: 1023px){ 
+    
+    .blockContent{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+

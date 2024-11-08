@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+.noShowMain{
+    display: none;
+}
+.itemBlock{
+    min-width: 150px;
+    max-width: 300px;
+    height: 300px;
+    margin: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 0 5px;
+}
+.iconBlock{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 90%;
+    height: 90%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 16px;
+}
+p{
+    margin: 10px 0;
+}
+.textBlock{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+@media screen and (min-width: 1075px) and (max-width: 1440px){
+    .main{
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1075px){ 
+    .main{
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media screen and (min-width: 933px) and (max-width: 1023px){ 
+    .main{
+        grid-template-columns: repeat(3, 1fr);
+      
+     
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 932px){ 
+    .main{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+@media screen and (min-width: 377px) and (max-width: 768px){ 
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 376px){ 
+    .main{
+        grid-template-columns:   auto;
+        justify-items: center;
+    }
+    .itemBlock{
+        width: 260px;   /* указываю фикс. ширину, из-за центрирования */
+    }
+}
+
